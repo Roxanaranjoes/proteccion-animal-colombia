@@ -2,7 +2,7 @@
 
 Página sobre tipos de maltrato animal, penas, normativa colombiana y canales oficiales de denuncia, con referencias de Antioquia.
 
-[Abrir la página](https://proteccion-animal-colombia-rn.exactjam8193.chatgpt.site/)
+[Abrir la página](https://proteccion-animal-colombia.netlify.app/)
 
 ## Contenido
 
@@ -15,6 +15,8 @@ Página sobre tipos de maltrato animal, penas, normativa colombiana y canales of
 
 El sitio usa HTML, CSS y JavaScript sin dependencias de ejecución. Edita `index.html`, `styles.css` y `app.js`; los recursos visuales están en `assets/`.
 
-GitHub Pages publica la rama `main` desde la raíz. Los cambios enviados a esta rama actualizan el sitio.
+La página principal se publica en Netlify mediante la carga manual de los archivos estáticos. Para actualizarla, sube la carpeta del sitio o su ZIP al proyecto `proteccion-animal-colombia` en Netlify.
+
+La copia de GitHub Pages publica la rama `main` desde la raíz; los cambios enviados a esta rama actualizan esa copia.
 
 Autora: Roxana Naranjo Estrada · rnaranjo@unal.edu.co
