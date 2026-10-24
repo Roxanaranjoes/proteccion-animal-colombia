@@ -29,3 +29,176 @@
 
 @media(max-width:760px){.table-scroll{overflow:visible;background:transparent}.penalty-table{display:block;min-width:0;background:transparent}.penalty-table thead{display:none}.penalty-table tbody{display:block}.penalty-table tr{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:#f9faf4;border-radius:6px;padding:22px;margin-bottom:14px}.penalty-table tr>*{width:auto!important;padding:0;border:0}.penalty-table tbody th{grid-column:1/-1;font-size:15px}.penalty-table td:last-child{grid-column:1/-1;font-size:11px;border-top:1px solid #e0e7d6;padding-top:12px}.penalty-table td:nth-child(2):before{content:"PRISIÓN";display:block;font-size:7px;color:#9dad8b;letter-spacing:1px;margin-bottom:5px}.penalty-table td:nth-child(3):before{content:"MULTA";display:block;font-size:7px;color:#9dad8b;letter-spacing:1px;margin-bottom:5px}.penalty-table small{font-size:9px;line-height:1.6}.penalty-table td strong{font-size:26px}.penalty-table td a{font-size:9px}}
 @page{size:A4;margin:15mm}@media print{html{scroll-behavior:auto}body{background:#fff;font-size:10pt}.section-wrap{width:100%;max-width:none}.site-header,.skip-link,.hero-image,.hero-actions,.review-date,.law-tools,.library-controls,.load-more-wrap,.menu-toggle,.back-top,.abuse-aside{display:none!important}.hero,.content-section,.penalty-section,.territory-section{padding-block:15px;background:#fff!important;color:#222}.hero{display:block}.hero h1{font-size:30pt}.hero h1 br{display:none}.section-heading{display:block;margin-bottom:15px}.section-heading h2,.penalty-section .section-heading h2,.territory-grid h2{font-size:22pt}.section-heading>p{max-width:none;margin-top:10px}.abuse-layout,.territory-grid,.faq-section,.penalty-details{display:block}.penalty-table{min-width:0;font-size:8pt}.penalty-table th,.penalty-table td{padding:10px;font-size:8pt}.penalty-table td strong{font-size:13pt}.penalty-notes{color:#333}.penalty-section .section-heading>p,.penalty-section .eyebrow,.penalty-details summary,.penalty-details details>div,.penalty-details h3,.penalty-details a{color:#333}.law-row[hidden]{display:block!important}.section-footnote{margin-left:0}.contact-panel{color:#222;background:#fff;border:1px solid #ccc}.contact-panel *{color:#333!important}.abuse-content,.law-detail,.penalty-details details>div,.faq-list p{font-size:9pt}.report-steps p{font-size:9pt}details,article,tr{break-inside:avoid}.law-reference{font-size:8pt}.site-footer{background:#fff}.footer-bottom{color:#555}.source-label{font-size:8pt}}
+
+/* Sanciones: acceso directo y cifras de consulta con mayor jerarquía. */
+.main-nav .nav-penalties {
+  color: #70501e;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #b89954;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+.hero .button-primary {
+  background: #b89954;
+  color: #12342d;
+  border-color: #b89954;
+}
+.hero .button-primary:hover { background: #c8aa66; border-color: #c8aa66; }
+.penalty-section {
+  padding-block: 72px;
+  background: #12342d;
+  border-top: 5px solid #b89954;
+  color: #fffdf5;
+}
+.penalty-section .section-heading { gap: 44px; margin-bottom: 34px; }
+.penalty-section .section-heading > div { flex: 1; min-width: 0; }
+.penalty-section .eyebrow { color: #e4c88b; font-size: 11px; letter-spacing: 1.7px; }
+.penalty-section .section-heading h2 { font-size: 44px; line-height: 1.12; letter-spacing: -1.4px; }
+.penalty-section .section-heading h2 > span { color: #e4c88b; }
+.penalty-section .section-heading > p {
+  flex: 1;
+  max-width: 385px;
+  color: #d1dfd6;
+  font-size: 13px;
+  line-height: 1.85;
+}
+.penalty-section .table-scroll {
+  border: 1px solid #b8a37480;
+  border-radius: 10px;
+  background: #fffdf7;
+  box-shadow: 0 14px 35px #061f181f;
+}
+.penalty-table { min-width: 0; color: #12342d; }
+.penalty-table th:first-child { width: 25%; }
+.penalty-table th:nth-child(2) { width: 19%; }
+.penalty-table th:nth-child(3) { width: 17%; }
+.penalty-table th:nth-child(4) { width: 39%; }
+.penalty-table th, .penalty-table td { padding: 25px 22px; border-bottom-color: #d8ddd1; }
+.penalty-table thead th {
+  padding-block: 16px;
+  background: #e7ede2;
+  color: #344e3e;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+}
+.penalty-table tbody th { font-size: 17px; line-height: 1.35; font-weight: 650; }
+.penalty-table td { font-size: 12px; line-height: 1.75; color: #3f5548; }
+.penalty-table td:nth-child(2), .penalty-table thead th:nth-child(2) { background: #fff0e7; color: #843923; }
+.penalty-table td:nth-child(3), .penalty-table thead th:nth-child(3) { background: #f9efd4; color: #70501e; }
+.penalty-table td:nth-child(2) { font-weight: 600; }
+.penalty-table td strong {
+  display: block;
+  font-size: clamp(28px, 3.2vw, 39px);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -1.6px;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+.penalty-table small { color: #52614f; font-size: 10px; line-height: 1.65; margin-top: 8px; }
+.penalty-table td:nth-child(2) small { color: #7c4936; }
+.penalty-table td:nth-child(3) small { color: #6b572a; font-weight: 600; }
+.penalty-table td a { color: #38543d; font-size: 10px; margin-top: 12px; }
+.penalty-scope { font-size: 12px; color: #d1dfd6; line-height: 1.8; margin-top: 22px; }
+.penalty-notes {
+  gap: 30px;
+  margin-top: 20px;
+  padding: 22px 24px;
+  border: 1px solid #628478;
+  border-radius: 7px;
+  background: #1a4137;
+  color: #d1dfd6;
+  font-size: 12px;
+}
+.penalty-notes strong { color: #f0d6a0; font-weight: 650; }
+.penalty-notes a, .penalty-details a { color: #f0d6a0; }
+.penalty-details { gap: 0 32px; margin-top: 27px; }
+.penalty-details details { border-top-color: #628478; }
+.penalty-details summary { padding-block: 21px; font-size: 14px; line-height: 1.55; color: #f4f7ed; }
+.penalty-details summary > span { color: #e4c88b; }
+.penalty-details details > div { color: #d1dfd6; font-size: 13px; line-height: 1.9; }
+.penalty-details h3 { color: #f0d6a0; font-size: 13px; }
+
+@media (min-width: 761px) and (max-width: 940px) {
+  .penalty-section .section-heading { gap: 30px; }
+  .penalty-section .section-heading h2 { font-size: 38px; }
+  .penalty-section .section-heading > p { font-size: 12px; }
+  .penalty-table th, .penalty-table td { padding: 21px 14px; }
+  .penalty-table tbody th { font-size: 15px; }
+  .penalty-table td { font-size: 11px; }
+  .penalty-table td strong { font-size: 28px; letter-spacing: -1px; }
+}
+@media (max-width: 760px) {
+  .penalty-section { padding-block: 54px; }
+  .penalty-section .section-heading { gap: 21px; margin-bottom: 29px; }
+  .penalty-section .section-heading h2 { font-size: 38px; }
+  .penalty-section .section-heading > p { max-width: 520px; font-size: 13px; }
+  .penalty-section .table-scroll { border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+  .penalty-table tr {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 0;
+    padding: 0;
+    margin-bottom: 18px;
+    overflow: hidden;
+    border: 1px solid #d9dfd0;
+    border-radius: 9px;
+    background: #fffdf7;
+  }
+  .penalty-table tr > * { min-width: 0; padding: 20px; border: 0; }
+  .penalty-table tbody th { font-size: 19px; padding-bottom: 18px; }
+  .penalty-table tbody th small { margin-top: 7px; font-size: 11px; }
+  .penalty-table td:nth-child(2), .penalty-table td:nth-child(3) { padding-block: 20px; }
+  .penalty-table td:nth-child(2):before, .penalty-table td:nth-child(3):before {
+    margin-bottom: 10px;
+    color: inherit;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    line-height: 1.5;
+  }
+  .penalty-table td strong { font-size: 36px; letter-spacing: -1.4px; }
+  .penalty-table small { font-size: 11px; }
+  .penalty-table td:last-child { padding: 20px; border-top: 1px solid #d8ddd1; font-size: 12px; }
+  .penalty-table td a { font-size: 11px; }
+  .penalty-notes { padding: 21px; gap: 18px; }
+  .penalty-details summary { font-size: 14px; }
+}
+@media (max-width: 380px) {
+  .penalty-section .section-heading h2 { font-size: 34px; }
+  .penalty-table tr > *, .penalty-table td:last-child { padding-inline: 16px; }
+  .penalty-table td strong { font-size: 31px; letter-spacing: -1.2px; }
+}
+@media print {
+  .penalty-section { border-top: 1pt solid #555; padding-block: 15px; }
+  .penalty-section .eyebrow, .penalty-section .section-heading > p,
+  .penalty-section .section-heading h2 > span, .penalty-scope,
+  .penalty-notes, .penalty-notes strong, .penalty-notes a,
+  .penalty-details summary, .penalty-details summary > span,
+  .penalty-details details > div, .penalty-details h3, .penalty-details a { color: #222; }
+  .penalty-section .section-heading h2 { font-size: 22pt; letter-spacing: -.5pt; }
+  .penalty-section .section-heading { margin-bottom: 15px; }
+  .penalty-section .section-heading > p { max-width: none; font-size: 9pt; }
+  .penalty-section .table-scroll { overflow: visible; border: 1px solid #bbb; border-radius: 0; background: #fff; box-shadow: none; }
+  .penalty-table { display: table; width: 100%; min-width: 0; background: #fff; }
+  .penalty-table thead { display: table-header-group; }
+  .penalty-table tbody { display: table-row-group; }
+  .penalty-table tr { display: table-row; margin: 0; padding: 0; border: 0; border-radius: 0; background: #fff; }
+  .penalty-table tr > * { display: table-cell; padding: 9px; border-bottom: 1px solid #bbb; background: #fff; color: #222; }
+  .penalty-table th:first-child { width: 25% !important; }
+  .penalty-table th:nth-child(2) { width: 19% !important; }
+  .penalty-table th:nth-child(3) { width: 17% !important; }
+  .penalty-table th:nth-child(4) { width: 39% !important; }
+  .penalty-table tbody th { font-size: 10pt; }
+  .penalty-table td:nth-child(2), .penalty-table td:nth-child(3),
+  .penalty-table thead th:nth-child(2), .penalty-table thead th:nth-child(3) { padding: 9px; background: #fff; color: #222; }
+  .penalty-table td:last-child { padding: 9px; font-size: 8pt; border-top: 0; }
+  .penalty-table td:nth-child(2):before, .penalty-table td:nth-child(3):before { display: none; content: none; }
+  .penalty-table td strong { font-size: 15pt; letter-spacing: -.5pt; }
+  .penalty-table small, .penalty-table tbody th small,
+  .penalty-table td:nth-child(2) small, .penalty-table td:nth-child(3) small,
+  .penalty-table td a { font-size: 8pt; color: #333; }
+  .penalty-notes { margin-top: 15px; padding: 12px; border: 1px solid #bbb; background: #fff; font-size: 9pt; }
+  .penalty-scope, .penalty-details details > div, .penalty-details h3 { font-size: 9pt; }
+  .penalty-details summary { padding-block: 12px; font-size: 10pt; }
+}
