@@ -2,7 +2,7 @@
 
 Página sobre tipos de maltrato animal, penas, normativa colombiana y canales oficiales de denuncia, con referencias de Antioquia.
 
-[Abrir la página](https://roxanaranjoes.github.io/proteccion-animal-colombia/)
+[Abrir la página](https://proteccion-animal-colombia-rn.exactjam8193.chatgpt.site/)
 
 ## Contenido
 
